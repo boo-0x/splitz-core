@@ -1,0 +1,40 @@
+{
+    "name": "payment-splitter",
+    "scripts": {
+        "compile": "hardhat compile",
+        "deploy:testnet": "yarn hardhat run ./scripts/deploy.js --network reef_testnet",
+        "deploy:mainnet": "yarn hardhat run ./scripts/deploy.js --network reef_mainnet",
+        "deploy-splitter": "yarn hardhat run ./scripts/deploy-payment-splitter.js --network reef_testnet",
+        "deploy-splitter-erc20": "yarn hardhat run ./scripts/deploy-payment-splitter-erc20.js --network reef_testnet",
+        "create-splitter:testnet": "yarn hardhat run ./scripts/create-payment-splitter.js --network reef_testnet",
+        "create-splitter:mainnet": "yarn hardhat run ./scripts/create-payment-splitter.js --network reef_mainnet",
+        "test": "yarn hardhat test --network reef",
+        "test:testnet": "yarn hardhat test --network reef_testnet",
+        "console": "yarn hardhat console",
+        "console:testnet": "yarn hardhat console --network reef_testnet",
+        "doc": "yarn hardhat dodoc",
+        "size": "yarn hardhat size-contracts"
+    },
+    "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "^2.0.5",
+        "@nomiclabs/hardhat-waffle": "^2.0.3",
+        "@primitivefi/hardhat-dodoc": "^0.2.3",
+        "@reef-defi/hardhat-reef": "^1.0.10",
+        "chai": "^4.3.6",
+        "dotenv": "^16.0.0",
+        "eslint": "^8.12.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-promise": "^6.0.0",
+        "ethereum-waffle": "^3.4.4",
+        "ethers": "^5.6.2",
+        "hardhat": "~2.8.4",
+        "hardhat-contract-sizer": "^2.5.1",
+        "prettier": "^2.6.2",
+        "prettier-plugin-solidity": "^1.0.0-beta.19",
+        "solhint": "^3.3.7"
+    }
+}
