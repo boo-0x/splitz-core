@@ -3,14 +3,6 @@ require("@reef-defi/hardhat-reef");
 require("@primitivefi/hardhat-dodoc");
 require("hardhat-contract-sizer");
 
-task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
-    const accounts = await reef.getSigners();
-
-    for (const account of accounts) {
-        console.log(await account.getAddress());
-    }
-});
-
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
@@ -47,20 +39,16 @@ module.exports = {
     },
     contracts: {
         reef: {
-            paymentSplitterFactory: "",
-            paymentSplitter: "",
-            paymentSplitterErc20: "0x290C2392d4222CdA3afa2A85e91ba4d5c423D601",
-            pullPayment: "0x3E7d40eB2aD50A127ab99bC674988fC21e8e4311",
-            reefToken: "0x0000000000000000000000000000000001000000",
-            mockToken: "0xb261b138bfb7845e350b64A0308f01df3c6FDC7c",
+            splitz: "",
+            pullPayment: "",
+            mockToken: "",
+            reefToken: "",
         },
         reef_testnet: {
-            paymentSplitterFactory: "",
-            paymentSplitter: "",
-            paymentSplitterErc20: "0x61f5e2531C3f1F87bF2a79C51D8247D54Ea233B1",
+            splitz: "0x6330dD7daCd16AD763f844609BCEc34a145aF238",
             pullPayment: "0x8425da8A15Dc9F5395dBa0C8C4D2116d80FA3aA9",
+            mockToken: "0xaf5F0189542c1fE44fF10D7dc07359e57831179A",
             reefToken: "0x0000000000000000000000000000000001000000",
-            mockToken: "0xcd32473d48204c91994b0A5A32647e538e110fF4",
         },
     },
     contractSizer: {
@@ -74,8 +62,11 @@ module.exports = {
         runs: 200,
     },
     func: {
-        toReef: function toReef(value) {
-            return ethers.utils.parseEther(value.toString());
+        toReef: function toReef(num) {
+            return ethers.utils.parseEther(num.toString());
+        },
+        toNumber: function toNumber(bigNum) {
+            return Number(ethers.utils.formatEther(bigNum));
         },
         getSignerAndAddress: async (name) => {
             const signer = await reef.getSignerByName(name);

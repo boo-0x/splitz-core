@@ -1,4 +1,4 @@
-# Payment Splitter
+# Splitz
 
 Adaptation of [OpenZeppelin's PaymentSplitter](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/finance/PaymentSplitter.sol). This version adds the capability to withdraw REEF from a third party contract that requires the caller to be the recipient address of the available balance.
 
