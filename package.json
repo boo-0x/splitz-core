@@ -7,6 +7,7 @@
         "deploy-erc20:testnet": "yarn hardhat run ./scripts/deploy-erc20.js --network reef_testnet",
         "send-reef:testnet": "yarn hardhat run ./scripts/send-reef.js --network reef_testnet",
         "send-erc20:testnet": "yarn hardhat run ./scripts/send-erc20.js --network reef_testnet",
+        "deposit-pull:testnet": "yarn hardhat run ./scripts/deposit-to-pull-payment.js --network reef_testnet",
         "test": "yarn hardhat test --network reef",
         "test:testnet": "yarn hardhat test --network reef_testnet",
         "console": "yarn hardhat console",
