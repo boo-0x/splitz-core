@@ -4,13 +4,6 @@ Adaptation of [OpenZeppelin's PaymentSplitter](https://github.com/OpenZeppelin/o
 
 This project has been created using the [Hardhat-reef-template](https://github.com/reef-defi/hardhat-reef-template).
 
-## Contract addresses
-
-Mainnet:
-[0x0](https://reefscan.com/contract/0x0)
-
-Testnet: [0x0](https://testnet.reefscan.com/contract/0x0)
-
 ## Installing
 
 Install all dependencies with `yarn`.
