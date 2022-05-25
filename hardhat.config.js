@@ -45,7 +45,7 @@ module.exports = {
             reefToken: "",
         },
         reef_testnet: {
-            splitz: "0x6330dD7daCd16AD763f844609BCEc34a145aF238",
+            splitz: "0xC1ee40001Ce6E551a72FC601BEB803819f364E38",
             pullPayment: "0x8425da8A15Dc9F5395dBa0C8C4D2116d80FA3aA9",
             mockToken: "0xaf5F0189542c1fE44fF10D7dc07359e57831179A",
             reefToken: "0x0000000000000000000000000000000001000000",

@@ -2322,11 +2322,6 @@
   resolved "https://registry.yarnpkg.com/@open-web3/scanner/-/scanner-1.1.3.tgz#07ec507c538599662fb53b90ea8ddb35f6cc9387"
   integrity sha512-I81qrbnT01HdaxLZn9lFbp2rRRn9F/HkCr69pgt4XPHApuQGbzlSpJyRSpO3aOXo6IM+MNVVK7aV62QsjpsQ9Q==
 
-"@openzeppelin/contracts@^4.6.0":
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.6.0.tgz#c91cf64bc27f573836dba4122758b4743418c1b3"
-  integrity sha512-8vi4d50NNya/bQqCmaVzvHNmwHvS0OBKb7HNtuNwEE3scXWrP31fKQoGxNMT+KbzmrNZzatE3QK5p2gFONI/hg==
-
 "@polkadot/api-derive@6.4.2", "@polkadot/api-derive@~6.4.2":
   version "6.4.2"
   resolved "https://registry.yarnpkg.com/@polkadot/api-derive/-/api-derive-6.4.2.tgz#1f63765285cc308beff20729e06b937b40d9a2c2"
@@ -2601,10 +2596,10 @@
     blakejs "~1.1.0"
     ethers "~5.5.0"
 
-"@reef-defi/hardhat-reef@^1.0.10":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@reef-defi/hardhat-reef/-/hardhat-reef-1.0.11.tgz#fc2970d37ffa942bb0a87182fb3451b888784fc9"
-  integrity sha512-Vow8wP+D644u9HXVjDnCKlATORiwDqvofxx2KwAFolUdk6Yq4UHx8xMG/eGGeiQljpDGjjhA4/3qMLwkE7IqGA==
+"@reef-defi/hardhat-reef@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@reef-defi/hardhat-reef/-/hardhat-reef-1.0.12.tgz#b895f37f1d954052ed0a1af787c619c7d959f991"
+  integrity sha512-jA4rUwbqylPx9QepuhW7yxMavfFV3Ff6kEhefroXoCci80eh6AVVtiNA1lqPRLFWLhccQnPiVNLZaTglpDcm7Q==
   dependencies:
     "@reef-defi/evm-provider" "^1.0.6"
     "@types/validator" "^13.1.3"
